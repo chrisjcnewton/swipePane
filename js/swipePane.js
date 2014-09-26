@@ -336,6 +336,8 @@ var SwipePane = SwipePane || function(domElem, optionsOverride){
 	        dragMid = dragEnd;
 	        scrollTo(currentPos, 0, false);
         }  
+        // Need this for the Android Browser !!!  
+		evt.preventDefault();
 	}
 	
 	function onEnd(e){
